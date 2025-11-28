@@ -126,7 +126,7 @@ class ParserService:
                                         url = url_part[:-1]
 
                                 title = self.clean_title(title_part.strip())
-                                ranks = [rank] if rank is not None else [1]
+                                ranks = [rank] if rank is not None else []
 
                                 titles_by_id[source_id][title] = {
                                     "ranks": ranks,
